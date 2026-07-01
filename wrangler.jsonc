@@ -3,5 +3,9 @@
   "compatibility_date": "2024-09-23",
   "assets": {
     "directory": "./"
-  }
+  },
+  "routes": [
+    { "pattern": "ceziumgames.com", "custom_domain": true },
+    { "pattern": "www.ceziumgames.com", "custom_domain": true }
+  ]
 }
