@@ -47,7 +47,9 @@ a:hover { text-decoration: underline; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 64px;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  padding: 12px 0;
 }
 
 .logo {
@@ -55,12 +57,19 @@ a:hover { text-decoration: underline; }
   font-weight: 700;
   color: var(--accent);
   letter-spacing: 0.02em;
+  white-space: nowrap;
 }
 .logo:hover { text-decoration: none; }
 
+.nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+}
+
 .nav a {
   color: var(--text);
-  margin-left: 28px;
   font-weight: 500;
 }
 .nav a:hover { color: var(--accent); text-decoration: none; }
@@ -72,7 +81,6 @@ a:hover { text-decoration: underline; }
   font: inherit;
   cursor: pointer;
   color: var(--text);
-  margin-left: 28px;
   font-weight: 500;
 }
 .nav-button:hover { color: var(--accent); }
@@ -296,7 +304,9 @@ a:hover { text-decoration: underline; }
 
 @media (max-width: 600px) {
   .hero h1 { font-size: 2.25rem; }
-  .nav a { margin-left: 16px; font-size: 0.9rem; }
+  .header-inner { justify-content: center; text-align: center; }
+  .nav { justify-content: center; gap: 6px 14px; }
+  .nav a, .nav-button { font-size: 0.9rem; }
 }
 
 /* Contact form */
