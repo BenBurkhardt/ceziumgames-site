@@ -363,7 +363,6 @@ a:hover { text-decoration: underline; }
   padding: 32px;
   max-width: 480px;
   width: 90%;
-  position: relative;
 }
 
 #contact-dialog::backdrop {
